@@ -1,0 +1,183 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+#main{
+width: 100%;
+overflow: hidden;
+}
+#page1{
+   display: flex;
+   height: 100vh;
+   width: 100%;
+}
+.left{
+    width: 20%;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/3772353/pexels-photo-3772353.jpeg?cs=srgb&dl=pexels-lucas-pezeta-3772353.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+.left-overlay{
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.619);
+}
+.left h1{
+    font-family: "Sedgwick Ave Display";
+    font-weight: 500;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.left h1 span{
+    color: orange;
+}
+.search{
+    font-family: gilroy;
+}
+.left .search label{
+     color: white;
+ }
+ .search-box{
+    display: flex;
+    align-items: center;
+ }
+.search-box input{
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 10px 2px;
+ }
+ .search-box input:focus{
+    outline: none;
+    border: none;
+ }
+ .left .search label{
+    color: gray;
+    text-transform: uppercase;
+ }
+ .left .search .search-box{
+    width: 220px;
+    height: 27px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 20px;
+ }
+ .left .search .search-box i{
+    color: white;
+    margin-right: 30px;
+ }
+ .left .detail label{
+    color: gray;
+    font-family: gilroy;
+ }
+ .left .detail .detail-box{
+    border-radius: 3px;
+    width: 220px;
+    height: 27px;
+    margin-bottom: 100px;
+    background-color: gray;
+ }
+ .left .detail .detail-box details{
+    color: white;
+    padding: 5px;
+}
+.left .detail .detail-box details > summary {
+     margin-bottom: 10px;
+    list-style: none;
+ }
+ .left .detail .detail-box details > summary i{
+    margin-left: 140px;
+ }
+ .left .detail .detail-box details > summary::-webkit-details-marker {
+    display: none;
+ }  
+ .discover label{
+   color: gray;
+    font-family: gilroy;
+ }
+ .discover h4{
+   color: white;
+   font-weight: 400;
+   font-family: gilroy;
+   margin-top: 10px;
+ }
+ .discover .selected{
+   color: orange;
+ }
+ .right{
+   width: 80%;
+   height: 100%;
+   background-color: bisque;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+ }
+ .right .boxes{
+    width: calc(100% / 3);
+    height: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+   }
+   .right .boxes:hover{
+      scale: 1.2;
+   }
+   .right .boxes:hover .inner-boxes{
+      background-color: rgba(0, 0, 0, 0.49);
+   }
+   .right .boxes:hover .boxes:nth-child(1){
+      background-size: auto;
+   }
+   .right .boxes:hover .boxes:nth-child(2){
+      background-size: auto;
+   }
+   .right .boxes:hover .boxes:nth-child(3){
+      background-size: auto;
+   }
+ .right .boxes .text-containt{
+   padding: 140% 13%;
+   text-align: center;
+ }
+ .right .boxes .text-containt .hed{
+    width: 290px;
+ }
+   .right .boxes h1{
+      color: white;
+      font-size: 30px;
+      margin-bottom: 10px;
+   }
+   .right .boxes h4{
+      color: white;
+   }
+   .right .boxes i{
+      color: goldenrod;
+   }
+   .right .boxes .inner-boxes{
+      background-color: rgba(0, 0, 0, 0.764);
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+      height: 100%;
+   }
+   .right .boxes:nth-child(1){
+   background-image: url(https://cdn.europosters.eu/image/750/posters/jurassic-world-t-rex-i26383.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+ }
+   .right .boxes:nth-child(2){
+   background-image: url(https://www.tvguide.com/a/img/catalog/provider/1/2/1-7412395488.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+ }
+   .right .boxes:nth-child(3){
+   background-image: url(https://movies-b26f.kxcdn.com/wp-content/uploads/2018/01/12-strong-movie-jc-1920x1080-770x470.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 25%;
+ }
